@@ -37,6 +37,7 @@ def play(env,agent,max_steps=500):
     env.close()
 
 if __name__ == "__main__":
+
     env_train = gym.make("CartPole-v1")
     agent = DQNAgent(env_train.observation_space.shape[0],
                      env_train.action_space.n)
