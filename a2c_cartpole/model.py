@@ -1,6 +1,5 @@
 import torch.nn as nn
-import torch.nn.functional
-from django.db.models import F
+import torch.nn.functional as F
 
 
 class Actor(nn.Module):

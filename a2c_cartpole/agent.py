@@ -1,6 +1,7 @@
 from model import *
 import torch.optim as optim
 from torch.distributions import Categorical
+import torch.nn.functional as F
 class Agent(object):
     def __init__(self,state_dim,action_dim,gamma=0.99,lr_a=1e-3,lr_c=1e-4):
         self.state_dim = state_dim
